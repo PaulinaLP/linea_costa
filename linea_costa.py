@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Sep 14 11:19:19 2023
-
-@author: AAM01379H
-"""
 
 import pandas as pd
 import geopandas as gpd
@@ -59,7 +53,7 @@ print(iberia_boundary.distance(puntoBarcelona))
 #accedo a la serie de LineStrings de la frontera
 exploded = iberia_boundary.explode()          
  
-#creo una lista para quitar la linea de peninsila y dejar solo las islas   
+#creo una lista para quitar la linea de peninsula y dejar solo las islas   
 lista=[]
 for i in range(0,1040):    
     if i in [935,1027,1028,1029,1030,1031,1032,1033,1034]:
